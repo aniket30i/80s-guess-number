@@ -24,6 +24,11 @@ document.querySelector('.check').addEventListener('click', function () {
     document.querySelector('.message').textContent = 'Bhosarpappu🤬';
   } else if (guess === Secretnumber) {
     document.querySelector('.message').textContent = 'Correct Number!🎉';
+
+    document.querySelector('body').style.backgroundColor = '#60b347';
+    document.querySelector('.number').style.width = '30rem';
+
+    // When guess is too high
   } else if (guess > Secretnumber) {
     if (score > 0) {
       document.querySelector('.message').textContent = 'Too high📈';
@@ -32,6 +37,8 @@ document.querySelector('.check').addEventListener('click', function () {
     } else {
       document.querySelector('.message').textContent = 'You lose😅';
     }
+
+    // When guess is too low
   } else if (guess < Secretnumber) {
     if (score > 0) {
       document.querySelector('.message').textContent = 'Too Low📉';
