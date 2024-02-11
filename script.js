@@ -24,7 +24,7 @@ document.querySelector('.check').addEventListener('click', function () {
   console.log(guess, typeof guess);
 
   if (!guess) {
-    displayMessage('Bhosarpappu🤬');
+    displayMessage('No input');
   } else if (guess === Secretnumber) {
     displayMessage('Correct Number!🎉');
     document.querySelector('.number').textContent = Secretnumber;
